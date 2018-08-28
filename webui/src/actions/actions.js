@@ -12,7 +12,6 @@ function revievedData(users) {
 }
 
 function fetchUsers() {
-    debugger
     return dispatch => {
         return fetch(URL)
         .then(response => response.json())
