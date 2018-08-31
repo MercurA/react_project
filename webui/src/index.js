@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Root from './components/Route/Router';
+import {MainRoute} from './components/routes/router';
 import configureStore from './confStore';
 
 const store = configureStore();
 // import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(  <Root store={store} />,
+ReactDOM.render(  <MainRoute store={store} />,
     document.getElementById('root'));
 // registerServiceWorker();
