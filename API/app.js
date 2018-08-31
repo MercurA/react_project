@@ -1,7 +1,13 @@
-const IoC = require('electrolyte');
+const express = require('express');
 
-IoC.use(IoC.dir('./'));
+let userHandler = require('./handler/userHandler');
 
-let http = IoC.create('server/http');
+let app = express();
 
-http.start();
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.post('/post', userHandler.insertUser)
+app.get('/get', userHandler.getAll)
+
+app.listen(3000, ()=>console.log('Server is up.'))

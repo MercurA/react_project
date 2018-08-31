@@ -2,7 +2,7 @@ import fetch from 'cross-fetch';
 
 export const RECIEVED_DATA = 'RECIEVED_DATA';
 
-const URL = 'http://localhost:3001/api/get'
+const URL = 'http://localhost:3001/get'
 
 function revievedData(users) {
     return {

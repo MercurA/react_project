@@ -1,5 +1,5 @@
 {
-  "name": "node_backend",
+  "name": "api",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -7,17 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js"
   },
-  "keywords": [
-    "backend",
-    "nodejs",
-    "electrolyte"
-  ],
-  "author": "HoreaC",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "electrolyte": "0.3.0",
     "express": "^4.16.3",
-    "jsonwebtoken": "^8.3.0",
-    "mongoose": "^5.2.3"
+    "mongoose": "^5.2.10"
   }
 }
