@@ -1,4 +1,4 @@
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import React, { Component } from 'react';
 
 import Login from '../login/Login';
@@ -8,10 +8,11 @@ export class MainRoute extends Component {
     render() {
         return (
             <BrowserRouter>
-                <div>
-                    <Route path='/login' component={Login}></Route>
+                <Switch>
+                    <Route exact path='/login' component={Login}></Route>
                     <Route path='/home' component={App}></Route>
-                </div>
+                    <Route component={Login}></Route>
+                </Switch>
             </BrowserRouter>
         )
     }
